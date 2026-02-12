@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Article"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "visible": {
+      "type": "boolean"
+    },
+    "category": {
+      "type": "customField",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "visible"
+            },
+            true
+          ]
+        }
+      },
+      "customField": "plugin::generic-custom-fields.category"
+    },
+    "zone": {
+      "type": "dynamiczone",
+      "components": [
+        "components.category"
+      ]
+    }
+  }
+}

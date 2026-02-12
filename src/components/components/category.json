@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_components_categories",
+  "info": {
+    "displayName": "category"
+  },
+  "options": {},
+  "attributes": {
+    "category": {
+      "type": "customField",
+      "customField": "plugin::generic-custom-fields.category"
+    }
+  },
+  "config": {}
+}

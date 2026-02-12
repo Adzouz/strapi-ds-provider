@@ -1,0 +1,12 @@
+{
+  "extends": "../../../jsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "moduleResolution": "node",
+    "paths": {
+      "@strapi/design-system": ["../../../../../node_modules/@strapi/design-system"],
+      "@strapi/icons": ["../../../../../node_modules/@strapi/icons"]
+    }
+  },
+  "include": ["admin/src", "server"]
+}
